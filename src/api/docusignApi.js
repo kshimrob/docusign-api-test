@@ -1,3 +1,5 @@
+const docusign = require('docusign');
+
 /****** CREATE ENVELOPE RECIPIENT VIEW ******/
 // instantiate a new EnvelopesApi object
 var envelopesApi = new docusign.EnvelopesApi();
@@ -5,7 +7,7 @@ var envelopesApi = new docusign.EnvelopesApi();
 // set the url where you want the recipient to go once they are done signing
 // should typically be a callback route somewhere in your app
 var viewRequest = new docusign.RecipientViewRequest();
-viewRequest.returnUrl = 'https://www.docusign.com/';
+viewRequest.returnUrl = '/';
 viewRequest.authenticationMethod = 'email';
 
 // recipient information must match embedded recipient info we provided in step #2
