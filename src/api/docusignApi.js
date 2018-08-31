@@ -1,4 +1,4 @@
-const docusign = require('docusign');
+const docusign = require('docusign-esign');
 
 /****** CREATE ENVELOPE RECIPIENT VIEW ******/
 // instantiate a new EnvelopesApi object
